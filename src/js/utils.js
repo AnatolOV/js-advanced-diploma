@@ -24,7 +24,35 @@
  * */
 export function calcTileType(index, boardSize) {
   // TODO: ваш код будет тут
-  return 'center';
+  const topLeft = 0;
+  const topRight = boardSize - 1;
+  const bottomLeft = boardSize ** 2 - boardSize;
+  const bottomRight = boardSize ** 2 - 1;
+
+  switch (index) {
+    case topLeft:
+      return 'top-left';
+    case topRight:
+      return 'top-right';
+    case bottomLeft:
+      return 'bottom-left';
+    case bottomRight:
+      return 'bottom-right';
+    default:
+      if (index > topLeft && index < topRight) {
+        return 'top';
+      }
+      if (index > bottomLeft && index < bottomRight) {
+        return 'bottom';
+      }
+      if (index % boardSize === 0) {
+        return 'left';
+      }
+      if (index % boardSize === boardSize - 1) {
+        return 'right';
+      }
+      return 'center';
+  }
 }
 
 export function calcHealthLevel(health) {
