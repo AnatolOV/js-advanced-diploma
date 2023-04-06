@@ -1,5 +1,5 @@
 {
-  "name": "ajs",
+  "name": "js-advanced-diploma-master",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,8 +14,8 @@
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
-  "author": "coursar",
-  "license": "MIT",
+  "author": "Anatoliy Oleynikov",
+  "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
@@ -37,5 +37,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnatolOV/js-advanced-diploma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnatolOV/js-advanced-diploma/issues"
+  },
+  "homepage": "https://github.com/AnatolOV/js-advanced-diploma#readme"
 }
